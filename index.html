@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,36 +9,39 @@
 </head>
 
 <body>
-    <h1>Properties</h1>
+    <div id="wrapper">
+        <header>
+            <h1>Properties</h1>
+        </header>
+        <main>
 
-    <main>
+            <section id="popular">
+                <h2>Popular</h2>
+                <template id="properties-temp">
 
-        <section id="popular">
-            <h2>Popular</h2>
-            <template id="properties-temp">
+                    <article class="pop-properties">
+                        <img>
+                        <h3>title</h3>
+                        <div class="main-info">
+                            <p class="rooms">Info</p>
+                            <p class="bath">Info</p>
+                            <p class="size">Info</p>
+                        </div>
+                        <section class="info">
+                            <p class="properties-info"> </p>
+                            <button>
+                                <h2>View Property</h2>
+                            </button>
+                        </section>
 
-                <article class="pop-properties">
-                    <img>
-                    <h3>title</h3>
+                    </article>
 
-                    <div class="main-info">
-                        <p class="rooms">Info</p>
-                        <p class="bath">Info</p>
-                        <p class="size">Info</p>
-                    </div>
-                    <section class="info">
-                        <p class="properties-info"> </p>
-                        <button>
-                            <h2>View Property</h2>
-                        </button>
-                    </section>
+                </template>
+            </section>
 
-                </article>
-
-            </template>
-        </section>
-
-    </main>
+        </main>
+    </div>
 </body>
-<script src="main.js"></script></html>
+<script src="main.js"></script>
 
+</html>

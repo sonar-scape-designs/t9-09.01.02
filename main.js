@@ -21,6 +21,7 @@ function showEachProperty(property) {
     copy.querySelector(".rooms").textContent = property.bedroom;
     copy.querySelector(".bath").textContent = property.bathroom;
     copy.querySelector(".size").textContent = property.feet;
+    copy.querySelector(".properties-info").textContent = property.content.rendered;
 
     document.querySelector("#popular").appendChild(copy)
 

@@ -9,30 +9,32 @@ html,
 body {
     padding: 0;
     margin: 0;
-    background-color: #f2f2f2;
-}
-
-body{
- margin: 2rem;
+    background-color: #F5F5F5;
 }
 
 
-main, #popular, #properties-temp {
+
+body {
+    margin: 2rem;
+
+}
+
+
+main,
+#popular,
+#properties-temp {
     grid-column: 1/-1;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 
 
-#popular {
-
-
-}
+#popular {}
 
 .pop-properties {
 
-    border: solid thin black;
+    border: solid thin grey;
     background-color: #fcfcfc;
     text-align: center;
     margin: 3rem;
@@ -43,7 +45,7 @@ main, #popular, #properties-temp {
     padding: 20px;
     background-color: #f2f2f2;
     display: flex;
-    align-items: cente
+    align-items: center;
 }
 
 p {
@@ -52,8 +54,23 @@ p {
     overflow: hidden;
 }
 
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
 h3 {
     padding: 0 60px;
+}
+
+h4 {
+        font-weight: 300;
+    font-size: 1rem;
+
+
+
+
 }
 
 img {
@@ -61,12 +78,56 @@ img {
     height: 200px;
 }
 
-button {
+button  {
     background-color: #1daaff;
     border: none;
     color: white;
     width: 100%;
+
+}
+
+/*nav bar*/
+
+
+ul {
+    list-style-type: none;
+    margin: 0 3rem 0;
+    padding: 0;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+
 }
 
 
 
+.head-text {
+    grid-column: 1;
+
+
+}
+
+.middle {
+    grid-column: 2;
+    align-self: center;
+     text-align:end;
+
+}
+
+.middle-second {
+    grid-column: 3;
+    align-self: center;
+    text-align: inherit;
+      color: #1daaff;
+
+}
+
+.new-button {
+    grid-column: -1;
+    align-self: center;
+border: solid thin #1daaff;
+    color: #1daaff;
+    padding: 1rem;
+}

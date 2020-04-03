@@ -8,7 +8,7 @@ fetch("http://sonarscapedesigns.com/2sem/T9/wp-json/wp/v2/property/")
 
 
 function showProperties(jsonData) {
-//        console.log(jsonData)
+    //        console.log(jsonData)
     jsonData.forEach(showEachProperty)
 }
 
@@ -23,4 +23,8 @@ function showEachProperty(property) {
     copy.querySelector(".size").textContent = property.feet;
 
     document.querySelector("#popular").appendChild(copy)
+
+
+
+
 }

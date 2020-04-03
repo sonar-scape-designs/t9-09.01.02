@@ -17,7 +17,7 @@ function showProperties(jsonData) {
 }
 
 function showEachProperty(property) {
-    console.log(property)
+    console.log(property._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url)
 
     const template = document.querySelector("#properties-temp").content;
     const copy = template.cloneNode(true);
@@ -25,6 +25,7 @@ function showEachProperty(property) {
     copy.querySelector(".rooms").textContent = property.bedroom;
     copy.querySelector(".bath").textContent = property.bathroom;
     copy.querySelector(".size").textContent = property.feet;
+    copy.querySelector("img").src = property._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
     copy.querySelector(".properties-info").textContent = property.content.rendered;
 
     document.querySelector("#popular").appendChild(copy)
@@ -38,8 +39,8 @@ function showEachProperty(property) {
 //    const mediumImg = base + "medium/" + imageName + "-md.jpg";
 //    const largeImg = base + "large/" + imageName + ".jpg";
 //    clone.querySelector("img").src = smallImg;
-
-
+//
+//
 //fetch("http://sonarscapedesigns.com/2sem/T9/wp-json/wp/v2/property?_embed")
 //    .then(function (response) {
 //        return response.json()

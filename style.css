@@ -13,10 +13,8 @@ body {
 }
 
 
-
 body {
     margin: 2rem;
-
 }
 
 
@@ -29,9 +27,6 @@ main,
 }
 
 
-
-#popular {}
-
 .pop-properties {
 
     border: solid thin grey;
@@ -39,7 +34,6 @@ main,
     text-align: center;
     margin: 3rem;
 }
-
 
 .main-info {
     padding: 20px;
@@ -52,9 +46,7 @@ p {
     margin: 0 auto;
     padding 30px;
     overflow: hidden;
-
 }
-
 
 
 h1 {
@@ -70,11 +62,9 @@ h3 {
 h4 {
     font-weight: 300;
     font-size: 1rem;
-
-
-
-
 }
+
+
 
 img {
     width: 100%;
@@ -82,16 +72,14 @@ img {
 }
 
 button {
-    background-color: #1daaff;
+    background-color: #2899de;
     border: none;
     color: white;
     width: 100%;
 
 }
 
-/*nav bar*/
-
-
+/*header structure*/
 ul {
     list-style-type: none;
     margin: 0 3rem 0;
@@ -99,45 +87,46 @@ ul {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
-
-
 }
 
 
+/*header info*/
 
 .head-text {
     grid-column: 1;
-
-
 }
 
 .middle {
-    grid-column: 2;
     align-self: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #969696
+}
+
+.first {
+    grid-column: 2;
     text-align: end;
 
 }
 
-.middle-second {
+.second {
     grid-column: 3;
-    align-self: center;
     text-align: inherit;
-    color: #1daaff;
-
+    color: #2899de;
 }
 
 .new-button {
     grid-column: -1;
     align-self: center;
-    border: solid thin #1daaff;
-    color: #1daaff;
+    border: solid thin #2899de;
+    color: #2899de;
     padding: 1rem;
 }
 
-
-.new-button, button, a:link, a:visited {
-  color: (internal value);
-  text-decoration: none;
-  cursor: pointer;
+.new-button,
+button,
+a:link,
+a:visited {
+    text-decoration: none;
+    cursor: pointer;
 }

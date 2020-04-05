@@ -1,6 +1,3 @@
-
-
-
 fetch("http://sonarscapedesigns.com/2sem/T9/wp-json/wp/v2/property?_embed")
     .then(function (response) {
         return response.json()
@@ -26,46 +23,34 @@ function showEachProperty(property) {
     copy.querySelector(".bath").textContent = property.bathroom;
     copy.querySelector(".size").textContent = property.feet;
     copy.querySelector("img").src = property._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
-    copy.querySelector(".properties-info").textContent = property.content.rendered;
+
 
     document.querySelector("#popular").appendChild(copy)
 }
 
-//add images
+//pop up//
 
-//const imageName = property.source_url;
-//    const base = "http://sonarscapedesigns.com/2sem/T9/wp-json/wp/v2/property?_embed";
-//    const smallImg = base + "small/" + imageName + "-sm.jpg";
-//    const mediumImg = base + "medium/" + imageName + "-md.jpg";
-//    const largeImg = base + "large/" + imageName + ".jpg";
-//    clone.querySelector("img").src = smallImg;
+//function showPropertyInfo(info) {
+//
+//    clone.querySelector("button").addEventListener("click", () => {
+//        console.log("click", jsonDatabase)
+//        fetch(`http://sonarscapedesigns.com/2sem/T9/wp-json/wp/v2/property?id=${info.id}`)
+//            .then(res => res.json())
+//            .then(showDetails);
+//    });
 //
 //
-//fetch("http://sonarscapedesigns.com/2sem/T9/wp-json/wp/v2/property?_embed")
-//    .then(function (response) {
-//        return response.json()
-//    })
-//    .then(function (data) {
-//        showImages(data)
-//    })
-//
-//
-//function showImages(jsonData) {
-//    //        console.log(jsonData)
-//    jsonData.forEach(showEachProperty)
+//    console.log(`#${info}`)
+//    document.querySelector(`#${property}`).appendChild(clone);
 //}
 //
-//function showEachImage(image) {
-//    console.log(property)
 //
-////    const template = document.querySelector("#properties-temp").content;
-////    const copy = template.cloneNode(true);
-////
-////    copy.querySelector("img").src = image.source_url;
-////
-//    var img = document.createElement('img');
-//    img.src = images[i].source_url;
+//function showDetails(data) {
+//    modal.querySelector(".modal-title").textContent = data.title.rendered;
+//    modal.querySelector(".modal-description").textContent = data.longdescription;
+//    modal.querySelector(".modal-price").textContent = data.price;
 //
-//    document.querySelector(".info").appendChild(copy)
-//    console.log(image)
+//    modal.classList.remove("hide");
 //}
+
+

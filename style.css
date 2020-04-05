@@ -52,7 +52,10 @@ p {
     margin: 0 auto;
     padding 30px;
     overflow: hidden;
+
 }
+
+
 
 h1 {
     margin: 0;
@@ -65,7 +68,7 @@ h3 {
 }
 
 h4 {
-        font-weight: 300;
+    font-weight: 300;
     font-size: 1rem;
 
 
@@ -78,7 +81,7 @@ img {
     height: 200px;
 }
 
-button  {
+button {
     background-color: #1daaff;
     border: none;
     color: white;
@@ -112,7 +115,7 @@ ul {
 .middle {
     grid-column: 2;
     align-self: center;
-     text-align:end;
+    text-align: end;
 
 }
 
@@ -120,14 +123,21 @@ ul {
     grid-column: 3;
     align-self: center;
     text-align: inherit;
-      color: #1daaff;
+    color: #1daaff;
 
 }
 
 .new-button {
     grid-column: -1;
     align-self: center;
-border: solid thin #1daaff;
+    border: solid thin #1daaff;
     color: #1daaff;
     padding: 1rem;
+}
+
+
+.new-button, button, a:link, a:visited {
+  color: (internal value);
+  text-decoration: none;
+  cursor: pointer;
 }
